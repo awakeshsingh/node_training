@@ -1,0 +1,30 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "start": "npm run build && node dist/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ."
+    }
+  },
+  "dependencies": {
+    "file-system": "^1.2.2",
+    "translator": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1"
+  }
+}
