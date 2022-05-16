@@ -1,5 +1,3 @@
-/* eslint-disable class-methods-use-this */
-// const fs = require('file-system')
 const fs = require('fs');
 
 class FileSystemDemo {
